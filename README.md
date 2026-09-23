@@ -1,16 +1,96 @@
-# React + Vite
+# 🖼️ Img to PDF
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly web application that allows users to convert multiple images into a single PDF document directly from the browser.
 
-Currently, two official plugins are available:
+Built with **React.js** and **Vite**, this application provides image upload, preview, image management, PDF configuration, and PDF generation features in a clean interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 📤 Upload multiple images
+* 🖼️ Preview uploaded images
+* 📋 View and manage selected images
+* 🗑️ Remove unwanted images
+* ⚙️ Configure PDF settings
+* 📄 Convert multiple images into a single PDF
+* 📥 Download the generated PDF
+* 📱 Responsive user interface
+* ⚡ Client-side PDF generation
+* 🔒 Images are processed directly in the browser
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **React.js**
+* **JavaScript (ES6+)**
+* **HTML5**
+* **CSS3**
+* **Vite**
+* **jsPDF**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+Img-to-PDF/
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── ConvertButton.jsx
+│   │   ├── Header.jsx
+│   │   ├── ImageList.jsx
+│   │   ├── ImagePreview.jsx
+│   │   ├── PdfSettings.jsx
+│   │   └── UploadArea.jsx
+│   │
+│   ├── utils/
+│   │   └── generatePdf.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## 🔄 How It Works
+
+### 1. Upload Images
+
+Select one or multiple images using the upload area.
+
+### 2. Preview Images
+
+Preview the selected images before generating the PDF.
+
+### 3. Manage Images
+
+View the uploaded images in the image list and remove any unwanted images.
+
+### 4. Configure PDF
+
+Adjust the available PDF settings according to your requirements.
+
+### 5. Generate PDF
+
+Click the **Convert to PDF** button to generate a PDF containing the selected images.
+
+The PDF generation logic is handled by:
+
+```text
+src/utils/generatePdf.js
+```
+
+## 🔐 Privacy
+
+The application performs image processing and PDF generation on the client side.
+
+Images do not need to be uploaded to a backend server for conversion.
+
+
+## 📄 License
+
+This project is licensed under the MIT License.
