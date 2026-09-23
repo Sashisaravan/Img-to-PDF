@@ -89,8 +89,3 @@ src/utils/generatePdf.js
 The application performs image processing and PDF generation on the client side.
 
 Images do not need to be uploaded to a backend server for conversion.
-
-
-## 📄 License
-
-This project is licensed under the MIT License.
